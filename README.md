@@ -33,7 +33,8 @@ Example:
 
 ### ✨ Contributors ✨
 **...tell the world who you and your team are 🙂**
-* Team member X (AAdvantage No)
+* Chioma Ifezie X6VU976
+* Modesola Giwa C1KV970
 * Jalen Evans Moore A3AU976
 * Team member Z (AAdvantage No)
 

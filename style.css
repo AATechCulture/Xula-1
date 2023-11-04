@@ -1,0 +1,173 @@
+header {
+    background-color: white; /* Change background color to white */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px; /* Increase the padding for a bigger header */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Add shadow to the header */
+}
+
+/* Apply styles to the logo */
+.logo {
+    width: 100px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Apply styles to the navigation links */
+.header-links {
+    text-transform: uppercase; /* Convert text to uppercase */
+    color: #1954c9; /* Text color for the links */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.header-links li {
+    margin-right: 20px; /* Adjust the spacing between links */
+    color: #0D73B1;
+}
+
+/* Add hover effect for links */
+.header-links li:hover {
+    text-decoration: underline;
+}
+
+.header-links .txtb {
+    color: aliceblue;
+    font-size: 24px; /* Change the font size to your desired value, e.g., 24px */
+    font-family: Arial, sans-serif; /* Change the font family to your preferred font */
+}
+
+.communication-pref {
+    color: #0D73B1; /* Text color */
+    font-size: 50px; /* Change the font size to your preferred size */
+}
+
+
+.go-back::before {
+    content: "<< "; /* Unicode character for a left arrow */
+    font-size: 16px; /* Adjust the size as needed */
+}
+
+.go-back {
+    color: #0D73B1; /* Text color */
+    font-size: 12px; /* Change the font size to your preferred size */
+}
+ 
+/**/
+
+/* Align the text to the left */
+.temperature-question {
+    text-align: left;
+}
+
+.checklist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checklist-item {
+    width: 50%; /* Each item takes up half of the horizontal screen */
+    box-sizing: border-box; /* Include padding and border in width */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    padding: 10px; /* Add padding to make containers larger */
+    border: 1px solid #ccc; /* Add a border to make containers visible */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Add space between rows */
+}
+
+.item-heading {
+    font-size: 18px; /* Adjust the font size for the heading */
+    font-weight: bold; /* Make the heading bold */
+    margin-bottom: 5px; /* Add space below the heading */
+}
+
+/* Style for the checkboxes and labels */
+.checklist-item input[type="checkbox"] {
+    margin-right: 5px; /* Add some space between checkbox and label */
+}
+
+.checklist-item label {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #333; /* Text color */
+}
+
+.item-text {
+    margin-top: 5px; /* Add space above the text */
+    font-size: 14px; /* Adjust the font size for the additional text */
+    color: #666; /* Text color */
+}
+
+.horizontal-shadow {
+    width: 100%;
+    height: 2px; /* Adjust the height of the shadow line as needed */
+    background-color: #fbfbfb; /* Shadow color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for the line */
+}
+
+/*Desola paste*/
+.key-row {
+    display: flex;
+    justify-content: space-between;
+    /* Space evenly across the page */
+    align-items: center;
+    position: relative;
+    /* Add relative positioning to the key-row container */
+}
+
+.key {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.key::before,
+.key::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    /* Faint line color */
+}
+
+.key::before {
+    top: 0;
+    /* Position at the top of the key-row container */
+}
+
+.key::after {
+    bottom: 0;
+    /* Position at the bottom of the key-row container */
+}
+
+i {
+    color: #337ab7;
+    /* Lighter blue color for icons */
+    font-size: 24px;
+    /* Adjust the icon size as needed */
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+    /* Lighter blue color for text */
+}
+
+.separator {
+    color: #ccc;
+    /* Faint line color */
+    width: 1px;
+    height: 100%;
+    margin: 0 10px;
+}
+
+
+
+
+

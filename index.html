@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-    <header>
-        <img class="logo" src="AA logo.png" alt="Logo"> <!-- Replace "your-logo.png" with your logo image source -->
-        <ul class="header-links">
-            <li>PLAN TRAVEL</li>
-            <li>TRAVEL INFORMATION</li>
-            <li>ADVANTAGE</li>
-        </ul>
-    </header>
+<header>
+    <img class="logo" src="AA logo.png" alt="Logo">
+    <ul class="header-links">
+        <li>PLAN TRAVEL</li>
+        <li>TRAVEL INFORMATION</li>
+        <li>ADVANTAGE</li>
+    </ul>
+</header>
+
 <body>
     <p class="communication-pref">Your Preferences</p>
     <p class="go-back">Back to your account</p>
@@ -42,186 +44,198 @@
             <a href="#">Book award travel</a>
         </div>
     </div>
-
-
-    <div class="temperature-question">
-        <p>Tell us what temperature you'd like to stay in</p>
-    <div class="checklist">
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option1">
-                <label for="option1"> Hot </label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
-        </div>
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option2">
-                <label for="option1"> Cold</label>
-            </div>
-            <div class="item-text">Additional information about Option 2 goes here.</div>
-        </div>
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option3">
-                <label for="option1">Humid</label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
-        </div>
-            <div class="checklist-item">
-                <div class="item-container">
-                    <input type="checkbox" id="option4">
-                    <label for="option1"> Dry</label>
+    <form class="checklist" action="api/">
+        <div class="temperature-question">
+            <p>Tell us what temperature you'd like to stay in</p>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="hot" data-label="C-Data">
+                        <label for="hot"> Hot </label>
+                    </div>
+                    <div class="item-text">Additional information about Hot goes here.</div>
                 </div>
-                <div class="item-text">Additional information about Option 1 goes here.</div>
-            </div>
-    </div>
-    <div class="horizontal-shadow"></div>
-
-    <div class="temperature-question">
-        <p>Tell us what time of the time you would like to travel</p>
-    <div class="checklist">
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option1">
-                <label for="option1"> Summer </label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
-        </div>
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option2">
-                <label for="option1"> Spring</label>
-            </div>
-            <div class="item-text">Additional information about Option 2 goes here.</div>
-        </div>
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option3">
-                <label for="option1"> Winter</label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
-        </div>
-            <div class="checklist-item">
-                <div class="item-container">
-                    <input type="checkbox" id="option4">
-                    <label for="option1"> Spring </label>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="cold" data-label="C-Data">
+                        <label for="cold"> Cold</label>
+                    </div>
+                    <div class="item-text">Additional information about Cold goes here.</div>
                 </div>
-                <div class="item-text">Additional information about Option 1 goes here.</div>
-            </div>
-    </div>
-    <div class="horizontal-shadow"></div>
-
-    <div class="temperature-question">
-        <p>What kinds of food are you alergic to</p>
-    <div class="checklist">
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option1">
-                <label for="option1"> Dairy </label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
-        </div>
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option2">
-                <label for="option1"> Gluten</label>
-            </div>
-            <div class="item-text">Additional information about Option 2 goes here.</div>
-        </div>
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option3">
-                <label for="option1"> Nuts</label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
-        </div>
-            <div class="checklist-item">
-                <div class="item-container">
-                    <input type="checkbox" id="option4">
-                    <label for="option1"> Shellfish </label>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input class="C-Data" type="checkbox" id="humid" data-label="C-Data">
+                        <label for="humid">Humid</label>
+                    </div>
+                    <div class="item-text">Additional information about Humid goes here.</div>
                 </div>
-                <div class="item-text">Additional information about Option 1 goes here.</div>
-            </div>
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option1">
-                <label for="option1"> Halal </label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
-        </div> 
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option1">
-                <label for="option1"> Vegan </label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
-        </div> 
-    </div>
-    <div class="horizontal-shadow"></div>
-
-    <div class="temperature-question">
-        <p>What regions do you want to visit</p>
-    <div class="checklist">
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option1">
-                <label for="option1"> Europe </label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
-        </div>
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option2">
-                <label for="option1"> Africa</label>
-            </div>
-            <div class="item-text">Additional information about Option 2 goes here.</div>
-        </div>
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option3">
-                <label for="option1"> Australia</label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
-        </div>
-            <div class="checklist-item">
-                <div class="item-container">
-                    <input type="checkbox" id="option4">
-                    <label for="option1"> South America </label>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input class="C-Data" type="checkbox" id="dry" data-label="C-Data">
+                        <label for="dry"> Dry</label>
+                    </div>
+                    <div class="item-text">Additional information about Dry goes here.</div>
                 </div>
-                <div class="item-text">Additional information about Option 1 goes here.</div>
             </div>
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option1">
-                <label for="option1"> Asia </label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
-        </div> 
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option1">
-                <label for="option1"> Carribean </label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
+            <div class="horizontal-shadow"></div>
         </div>
-        <div class="checklist-item">
-            <div class="item-container">
-                <input type="checkbox" id="option1">
-                <label for="option1"> North America </label>
-            </div>
-            <div class="item-text">Additional information about Option 1 goes here.</div>
-        </div>
-    </div>
-    <div class="horizontal-shadow"></div>
 
-    <div class="checklist-item">
-        <input type="checkbox" id="option1">
-        <label for="option1"> North America </label>
-        <div class="item-text">Additional information about Option 1 goes here.</div>
-    </div>
-    
-    <div class="horizontal-shadow"></div>
+        <div class="temperature-question">
+            <p>Tell us what time of the year you would like to travel</p>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="summer" data-label="C-Data">
+                        <label for="summer"> Summer </label>
+                    </div>
+                    <div class="item-text">Additional information about Summer goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="spring" data-label="C-Data">
+                        <label for="spring"> Spring</label>
+                    </div>
+                    <div class="item-text">Additional information about Spring goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="winter" data-label="C-Data">
+                        <label for="winter"> Winter</label>
+                    </div>
+                    <div class="item-text">Additional information about Winter goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="fall" data-label="C-Data">
+                        <label for="fall"> Fall </label>
+                    </div>
+                    <div class="item-text">Additional information about Fall goes here.</div>
+                </div>
+            </div>
+            <div class="horizontal-shadow"></div>
+        </div>
+
+        <div class="temperature-question">
+            <p>Tell us what you want top see</p>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="mountains" data-label="C-Data">
+                        <label for="summer"> Mountains </label>
+                    </div>
+                    <div class="item-text">Additional information about Summer goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="beaches" data-label="C-Data">
+                        <label for="spring"> Beaches</label>
+                    </div>
+                    <div class="item-text">Additional information about Spring goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="forest" data-label="C-Data">
+                        <label for="winter"> Forest</label>
+                    </div>
+                    <div class="item-text">Additional information about Winter goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="waterfront" data-label="C-Data">
+                        <label for="fall"> Waterfront </label>
+                    </div>
+                    <div class="item-text">Additional information about Fall goes here.</div>
+                </div>
+            </div>
+            <div class="horizontal-shadow"></div>
+        </div>
+
+        <div class="temperature-question">
+            <p>Dietary Restrictions / Requirements</p>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="nuts" data-label="C-Data">
+                        <label for="summer"> Nuts </label>
+                    </div>
+                    <div class="item-text">Additional information about Summer goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="dairy" data-label="C-Data">
+                        <label for="spring"> Dairy</label>
+                    </div>
+                    <div class="item-text">Additional information about Spring goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="gluten" data-label="C-Data">
+                        <label for="winter"> Gluten</label>
+                    </div>
+                    <div class="item-text">Additional information about Winter goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="shellfish" data-label="C-Data">
+                        <label for="fall"> Shellfish </label>
+                    </div>
+                    <div class="item-text">Additional information about Fall goes here.</div>
+                </div>
+            </div>
+            <div class="horizontal-shadow"></div>
+        </div>
+
+        <div class="temperature-question">
+            <p>What region do you want to visit</p>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="namerica" data-label="C-Data">
+                        <label for="summer"> North America </label>
+                    </div>
+                    <div class="item-text">Additional information about Summer goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="samerica" data-label="C-Data">
+                        <label for="spring"> South America</label>
+                    </div>
+                    <div class="item-text">Additional information about Spring goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="africa" data-label="C-Data">
+                        <label for="winter"> Africa</label>
+                    </div>
+                    <div class="item-text">Additional information about Winter goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="asia" data-label="C-Data">
+                        <label for="fall"> Asia </label>
+                    </div>
+                    <div class="item-text">Additional information about Fall goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="europe" data-label="C-Data">
+                        <label for="fall"> Europe </label>
+                    </div>
+                    <div class="item-text">Additional information about Fall goes here.</div>
+                </div>
+                <div class="checklist-item">
+                    <div class="item-container">
+                        <input type="checkbox" id="australia" data-label="C-Data">
+                        <label for="fall"> Australia </label>
+                    </div>
+                    <div class="item-text">Additional information about Fall goes here.</div>
+                </div>
+            </div>
+            <div class="horizontal-shadow"></div>
+        </div>
+
+        <input type="submit" value="Submit" />
+    </form>
 </body>
 
 </html>

@@ -15,13 +15,13 @@ def read_item(item_id: int, q: Union[str, None] = None):
     return {"item_id": item_id, "q": q}
 
 # user prefernces will be in the form 
-# pref = {temp pref: [True,False,True,Flase]
-#         time_of_yr: [True,True,False,False
-#         Dairy:
-#         Gluten:
-#         Shellfish:
-#         Nuts:
-#         halaal:
+# pref = {temp pref: [(hot)True,(cold)False,(humid)True,(dry)False]
+#         time_of_yr: [(winter)True,(spring)True,(summer)False,)(fall)False]
+#         Dairy: bool
+#         Gluten:bool
+#         Shellfish:bool
+#         Nuts:bool
+#         halaal:bool 
 #         Walkable: bool
 #         region: [bool, bool,bool, bool,bool]
 #         kid friendly: bool

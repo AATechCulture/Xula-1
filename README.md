@@ -34,7 +34,7 @@ Example:
 ### ✨ Contributors ✨
 **...tell the world who you and your team are 🙂**
 * Team member X (AAdvantage No)
-* Team member Y (AAdvantage No)
+* Jalen Evans Moore A3AU976
 * Team member Z (AAdvantage No)
 
 ### School Name 🏫

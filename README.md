@@ -6,14 +6,12 @@ This is a repository template containing all the information that needs to accom
 Feel free to use any languages or frameworks, but the following information must be filled out before hacking ends.
 ___________
 # Project Name
+VoyageVue
 
 ## Challenge Statement(s) Addressed 🎯
 **...include the challenge statement(s) the project worked to address**
 
-Examples:
-* How might we decrease the United States chances of alien and monster attacks given what we know from popular alien and monster movies?
-* How might we make it possible for people in cities not to have to own a car by making car-sharing easier so that the environment will be less damaged and people can save money?
-* How might we ....
+How might we improve customer experience by learning about customer preferences and uses that information to personalize their flying experience?
 
 ## Project Description 🤯
 The AAdvantage website enhancement, codenamed "____," aims to re-imagine the customer experience by leveraging user destination preferences and AI. This project will implement innovative features to provide personalized destination recommendations, generate tailored itineraries, and offer cost-effective flight options to AAdvantage members. The primary goal is to enhance customer satisfaction and loyalty by delivering a seamless and highly customized travel booking process.

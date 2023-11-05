@@ -27,7 +27,7 @@ completion = openai.ChatCompletion.create(
          Nuts:bool
          halaal:bool 
          Walkable: bool
-         region: [(North America), (South America), (Carribean)bool, (ASia) bool,(Europe)bool, (Africa)bool, (Australia) bool]
+         region: [(North America), (South America), (Carribean)bool, (Asia) bool,(Europe)bool, (Africa)bool, (Australia) bool]
          kid friendly: bool}
          nightlife: bool """}
     ]

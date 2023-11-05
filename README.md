@@ -24,6 +24,8 @@ Designed for high-value customers and frequent flyers, this app offers a tailore
 **... what tech was used to bring this project to life?**
 * FastAPI
 * OpenAI
+* Node.js
+* VS Code
 
 
 

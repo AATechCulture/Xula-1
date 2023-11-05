@@ -31,9 +31,11 @@ def read_item(item_id: int, q: Union[str, None] = None):
 
 # using a dictionary key of the city name and then checking if the list associated has the given value, shortening the list of usable cities as we go 
 # ex: {Houston }
-                     
+back
+d = json.loads(back
+               )                     
 def detail_information(location):
-    # use the following template to get the preferences through openAI: Can you fill out this form(preferences) based on this city, do not answer anything other than the filled out form
+    # use the following template to get the preferences through openAI: Can you fill out this form(preferences) based on (this city, do not answer anything other than the filled out form
     return dict of matches
 
 def trip_match(dict,user_preferences):

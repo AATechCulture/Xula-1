@@ -1,5 +1,10 @@
+from dotenv import load_dotenv
 from typing import Union
 from fastapi import FastAPI
+import os
+import openai
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 import requests
 app = FastAPI()

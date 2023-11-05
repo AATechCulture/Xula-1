@@ -3,11 +3,23 @@ import json
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-
+import city_data
 import requests
 import uvicorn
 
+import os
+import openai
+from dotenv import load_dotenv
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 # run python "$python main.py" & "$node index.js" at the same time for results
+
+
+
+
+
+
+
 
     
 def main():
@@ -18,6 +30,16 @@ def main():
     print("Hello World!")
     # data = requests.request("GET", url)
     # print(data.text)
+    def city_image(city):
+    response = openai.Image.create(
+    prompt= f"Provide a scenic image of {flight} that can be advertised for airlines.",
+    n=1,
+    size="1024x1024" 
+    )
+    return response
+
+    def city_description(city,user_pref):
+
 
 app = FastAPI()
 

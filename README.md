@@ -16,19 +16,17 @@ Examples:
 * How might we ....
 
 ## Project Description 🤯
-**....at lease 3 sentences describing what the project does and how it works**
+The AAdvantage website enhancement, codenamed "____," aims to re-imagine the customer experience by leveraging user destination preferences and AI. This project will implement innovative features to provide personalized destination recommendations, generate tailored itineraries, and offer cost-effective flight options to AAdvantage members. The primary goal is to enhance customer satisfaction and loyalty by delivering a seamless and highly customized travel booking process.
 
 ## Project Value 💰
-**....at lease 3 sentences describing your target customer and tangible benefits from your solution**
+Designed for high-value customers and frequent flyers, this app offers a tailored travel experience that combines efficiency with personalization and leverages data to recommend underperforming flights, thus helping airlines fill out seats. With its commitment to convenience and comfort, the app ensures that users can easily manage their travel arrangements and discover new and exciting destinations, all while providing them with exclusive opportunities and personalized recommendations. By catering to the distinct preferences of their most valuable clientele, airlines can utilize this app to create a competitive edge in the aviation industry and enhance the overall travel experience for all parties involved.
 
 
 ## Tech Overview 💻
 **... what tech was used to bring this project to life?**
-
-Example:
 * FastAPI
-* Hugging Face AI Models
-* Next.js
+* OpenAI
+
 
 
 ### ✨ Contributors ✨

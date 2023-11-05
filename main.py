@@ -16,14 +16,6 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 # run python "$python main.py" & "$node index.js" at the same time for results
 
-
-
-
-
-
-
-
-    
 def main():
     cities_to_desc = {}
     flights = []
@@ -95,6 +87,7 @@ def main():
 
 app = FastAPI()
 
+# allows info to not be barred from reaching backend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -115,8 +108,7 @@ class Data(BaseModel):
 @app.post("/test")
 async def read_item(data:Data):
     user = 'test'
-    # user = data.user
-    # make reques
+    # stores info provided by user into file 
     f = open(user + ".txt", "w")
     f.write(json.dumps(data.data))
     f.close()

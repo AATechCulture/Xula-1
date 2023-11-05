@@ -38,10 +38,10 @@ Example:
 * Team member Z (AAdvantage No)
 
 ### School Name 🏫
-The ABC School
+Xavier University of Louisiana
 
 ### Team Name 🏷
-Coding Costars
+Team X
 
 ### Link to Video Pitch 📹
 **...point us to where you tell us about your solution 😄**

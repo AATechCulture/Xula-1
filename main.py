@@ -33,8 +33,25 @@ def main():
     # data = requests.request("GET", url)
     # print(data.text)
 
+    def user_pref_matcher(user_pref,city_data):
+        # loops through the data of possible cities and creates a list of possible cities the customer may like, then iterates through that list deleting entries as they stop matching
+        poss_cities = {}
+        for key in user_pref:
+            for city in city_data:
+                if user_pref[key] == bool:
+                    if user_pref[key] == city[key]:
+                        poss_cities += city
+                # elif user_pref[key] == list:
+                #     if user_pref[key] == city[key]
+            for city in poss_cities:
+                    if user_pref[key] != poss_cities[key]:
+                        del poss_cities[city]
+
+            
+
 
     def city_image(city):
+        # generates an image for front end use using openAI
         response = openai.Image.create(
         prompt= f"Provide a scenic image of {city} that can be advertised for airlines.",
         n=1,
@@ -45,6 +62,7 @@ def main():
 
 
     def city_description(City,User_pref):
+        # generates a tailored description of the city to visit using the user's preferences and openAI to generate the description
 
         completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
@@ -60,7 +78,7 @@ def main():
     # print(city_description("dallas", {"hot": True,"cold": True,"humid": False,"dry": True,"best_time_of_year_to_visit": [False, True, False, False],"Dairy": True,"Gluten": True,"Shellfish": True,"Nuts": False,"halaal": False,"Walkable": True,"region": [False, False, False, False, False, False, False],"kid friendly": True,"nightlife": True,}))
 
     def trip_planner(city,user_pref):
-
+# plans the user a trip using the data available to openAI, using the preferences of the user as a basis for the suggestions.
         completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[

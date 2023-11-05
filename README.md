@@ -36,13 +36,13 @@ Example:
 * Chioma Ifezie X6VU976
 * Modesola Giwa C1KV970
 * Jalen Evans Moore A3AU976
-* Team member Z (AAdvantage No)
+* Kaleb Riley H7RT974
 
 ### School Name 🏫
-The ABC School
+Xavier University of Louisiana
 
 ### Team Name 🏷
-Coding Costars
+Xula-1
 
 ### Link to Video Pitch 📹
 **...point us to where you tell us about your solution 😄**

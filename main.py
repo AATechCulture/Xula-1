@@ -4,7 +4,6 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import city_data
-=======
 from fastapi.responses import FileResponse
 
 import requests

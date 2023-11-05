@@ -26,6 +26,7 @@ Designed for high-value customers and frequent flyers, this app offers a tailore
 * OpenAI
 * Node.js
 * VS Code
+* Express
 
 
 

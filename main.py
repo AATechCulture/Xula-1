@@ -30,15 +30,31 @@ def main():
     print("Hello World!")
     # data = requests.request("GET", url)
     # print(data.text)
+
+
     def city_image(city):
-    response = openai.Image.create(
-    prompt= f"Provide a scenic image of {flight} that can be advertised for airlines.",
-    n=1,
-    size="1024x1024" 
-    )
-    return response
+        response = openai.Image.create(
+        prompt= f"Provide a scenic image of {flight} that can be advertised for airlines.",
+        n=1,
+        size="1024x1024" 
+        )
+        return response
+
+
 
     def city_description(city,user_pref):
+
+        completion = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are acting as a travel assitant, skilled in selling a destination to a customer."},
+            {"role": "user", "content": f"Provide a description of {city} based on {user_pref}. Only output a short 3 sentence pitch, selling the customer the destination, referencing some of their preferneces in the pitch."}
+        ]
+        )
+
+
+        return completion.choices[0].message
+    
 
 
 app = FastAPI()

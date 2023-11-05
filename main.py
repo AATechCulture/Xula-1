@@ -36,7 +36,7 @@ async def read_item(data:Data):
     f = open(user + ".txt", "w")
     f.write(json.dumps(data.data))
     f.close()
-    return data.data
+    return data
     
 def main():
     url = 'https://ef75-144-9-80-252.ngrok.io/flights?date=2020-01-01'

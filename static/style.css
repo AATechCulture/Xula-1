@@ -167,7 +167,39 @@ a {
     margin: 0 10px;
 }
 
+/*Card Part*/
+/* Apply basic styles to the card */
+.card {
+    width: 100%; /* Card spans the screen horizontally */
+    height: 300px; /* Card is 300px tall */
+    display: flex;
+    flex-direction: column;
+    background: url('dallas_sunset.jpeg') no-repeat center center;
+    background-size: cover;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
+/* Style for the top part of the card (image and small text) */
+.card-image {
+    flex: 1; /* Top part takes available space, making it bigger */
+    position: relative;
+    overflow: hidden; /* Hide overflow content */
+}
 
+/* Style for the small text within the card image */
+.card-image p {
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
 
-
+/* Style for the bottom part of the card (text) */
+.card-text {
+    padding: 10px;
+    background: #f2f2f2;
+}

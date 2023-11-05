@@ -1,4 +1,3 @@
-# from typing import Union
 from fastapi import FastAPI
 import json
 from fastapi.staticfiles import StaticFiles
@@ -7,6 +6,9 @@ from pydantic import BaseModel
 
 import requests
 import uvicorn
+
+# run python "$python main.py" & "$node index.js" at the same time for results
+
 app = FastAPI()
 
 app.add_middleware(
@@ -30,6 +32,7 @@ class Data(BaseModel):
 async def read_item(data:Data):
     user = 'test'
     # user = data.user
+    # make reques
     f = open(user + ".txt", "w")
     f.write(json.dumps(data.data))
     f.close()

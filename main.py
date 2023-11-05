@@ -9,6 +9,16 @@ import uvicorn
 
 # run python "$python main.py" & "$node index.js" at the same time for results
 
+    
+def main():
+    cities_to_desc = {}
+    flights = []
+
+    url = 'https://ef75-144-9-80-252.ngrok.io/flights?date=2020-01-01'
+    print("Hello World!")
+    # data = requests.request("GET", url)
+    # print(data.text)
+
 app = FastAPI()
 
 app.add_middleware(
@@ -37,14 +47,6 @@ async def read_item(data:Data):
     f.write(json.dumps(data.data))
     f.close()
     return data
-    
-def main():
-    url = 'https://ef75-144-9-80-252.ngrok.io/flights?date=2020-01-01'
-    print("Hello World!")
-    # data = requests.request("GET", url)
-    # print(data.text)
-
-
 
 
 

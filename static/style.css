@@ -43,11 +43,12 @@ header {
     /* Increase the padding for a bigger header */
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     /* Add shadow to the header */
+    margin-bottom: 20px;
 }
 
 /* Apply styles to the logo */
 .logo {
-    width: 400px;
+    width: 290px;
     /* Adjust the width of the logo */
     height: auto;
     /* Maintain aspect ratio */
@@ -111,7 +112,6 @@ header {
 }
 
 /**/
-
 /* Align the text to the left */
 .temperature-question {
     text-align: left;
@@ -250,4 +250,92 @@ a {
     width: 1px;
     height: 100%;
     margin: 0 10px;
+}
+
+/*Card Part*/
+.card {
+    width: 100%;
+    /* Card spans the screen horizontally */
+    height: 300px;
+    /* Card is 300px tall */
+    display: flex;
+    flex-direction: column;
+    /* background: url('/Users/chiomaifezie/Xula-1/sunset_dallas.jpg') no-repeat center center; */
+    background-size: cover;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 10px;
+    margin-bottom: 50px;
+    /* Add margin-bottom for spacing between cards */
+}
+
+/* Style for the bottom part of the card (text) */
+.card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    /* Height for the text */
+    background: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent white background */
+}
+
+/* Style for the text within the card */
+/* .card::after {
+    content: 'Text goes here. This is the bottom part of the card.';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    text-align: left;
+    padding: 5px;
+} */
+
+body {
+    margin: 40px;
+    /* Add margin to the entire page */
+    padding: 20px;
+    /* Add padding to the entire page */
+    padding-right: 70px;
+}
+
+.card img {
+    width: 100%;
+    /* Make the image width 100% of the card's width */
+    height: 100%;
+    /* Make the image height 100% of the card's height */
+    object-fit: cover;
+    /* Ensure the image covers the entire card, maintaining aspect ratio */
+}
+
+/* Style for the bottom part of the card (text) */
+.card-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    text-align: left;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent white background */
+    font-size: 25px;
+    color: #337ab7;
+}
+
+#submit {
+    background-color: #0074cc;
+    /* Blue background color */
+    color: #fff;
+    /* White text color */
+    padding: 10px 20px;
+    /* Adjust padding for button size */
+    border: none;
+    /* Remove button border */
+    border-radius: 5px;
+    /* Add rounded corners */
+    float: left;
+    /* Align the button to the left */
 }

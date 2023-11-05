@@ -27,8 +27,7 @@ Examples:
 
 Example:
 * FastAPI
-* Hugging Face AI Models
-* Next.js
+* OpenAI
 
 
 ### ✨ Contributors ✨

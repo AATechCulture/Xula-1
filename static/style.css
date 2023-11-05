@@ -1,22 +1,66 @@
+/* Improved checklist items */
+.checklist-item {
+    width: 45%;
+    /* Slightly reduce width for better spacing */
+    background: #f5f5f5;
+    /* Use a light background color */
+    border: 2px solid #0078d2;
+    /* Highlight the checklist items */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Add hover effect for checklist items */
+.checklist-item:hover {
+    background: #5a98c7;
+    color: white;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* Form input styles */
+.checklist-item label {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Header link hover effect */
+.header-links li:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
 header {
-    background-color: white; /* Change background color to white */
+    background-color: white;
+    /* Change background color to white */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 30px; /* Increase the padding for a bigger header */
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Add shadow to the header */
+    padding: 30px 30px;
+    /* Increase the padding for a bigger header */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow to the header */
+    margin-bottom: 20px;
 }
 
 /* Apply styles to the logo */
 .logo {
-    width: 100px; /* Adjust the width of the logo */
-    height: auto; /* Maintain aspect ratio */
+    width: 290px;
+    /* Adjust the width of the logo */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 /* Apply styles to the navigation links */
 .header-links {
-    text-transform: uppercase; /* Convert text to uppercase */
-    color: #1954c9; /* Text color for the links */
+    text-transform: uppercase;
+    /* Convert text to uppercase */
+    color: #0078d2;
+    font-family: "AmericanSansLight", Helvetica, Arial, sans-serif;
+    /* Text color for the links */
     margin: 0;
     padding: 0;
     list-style: none;
@@ -24,8 +68,9 @@ header {
 }
 
 .header-links li {
-    margin-right: 20px; /* Adjust the spacing between links */
-    color: #0D73B1;
+    margin-right: 20px;
+    /* Adjust the spacing between links */
+    color: #0078d2;
 }
 
 /* Add hover effect for links */
@@ -35,77 +80,114 @@ header {
 
 .header-links .txtb {
     color: aliceblue;
-    font-size: 24px; /* Change the font size to your desired value, e.g., 24px */
-    font-family: Arial, sans-serif; /* Change the font family to your preferred font */
+    font-size: 24px;
+    font-family: "AmericanSansLight", Helvetica, Arial, sans-serif;
+    /* Change the font size to your desired value, e.g., 24px */
+    /* font-family: Arial, sans-serif; */
+    /* Change the font family to your preferred font */
 }
 
 .communication-pref {
-    color: #0D73B1; /* Text color */
-    font-size: 50px; /* Change the font size to your preferred size */
+    color: #0078d2;
+    /* Text color */
+    font-size: 50px;
+    font-family: "AmericanSansLight", Helvetica, Arial, sans-serif;
+    /* Change the font size to your preferred size */
 }
 
-
 .go-back::before {
-    content: "<< "; /* Unicode character for a left arrow */
-    font-size: 16px; /* Adjust the size as needed */
+    content: "<<";
+    /* Unicode character for a left arrow */
+    font-size: 10px;
+    font-family: "AmericanSansLight", Helvetica, Arial, sans-serif;
+    /* Adjust the size as needed */
 }
 
 .go-back {
-    color: #0D73B1; /* Text color */
-    font-size: 12px; /* Change the font size to your preferred size */
+    color: #0078d2;
+    /* Text color */
+    font-size: 16px;
+    font-family: "AmericanSansLight", Helvetica, Arial, sans-serif;
+    /* Change the font size to your preferred size */
 }
 
 /**/
-
 /* Align the text to the left */
 .temperature-question {
     text-align: left;
+    font-family: "AmericanSansLight", Helvetica, Arial, sans-serif;
+    color: #0078d2;
+    font-size: 22px;
+
 }
 
 .checklist {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    width: 100%
 }
 
 .checklist-item {
-    width: 50%; /* Each item takes up half of the horizontal screen */
-    box-sizing: border-box; /* Include padding and border in width */
+    width: 50%;
+    /* Each item takes up half of the horizontal screen */
+    box-sizing: border-box;
+    /* Include padding and border in width */
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    /* flex-direction: column; */
+    /* Stack elements vertically */
     align-items: center;
-    padding: 10px; /* Add padding to make containers larger */
-    border: 1px solid #ccc; /* Add a border to make containers visible */
-    border-radius: 5px; /* Rounded corners */
-    margin-bottom: 10px; /* Add space between rows */
+    padding: 10px;
+    /* Add padding to make containers larger */
+    border: 1px solid #ccc;
+    /* Add a border to make containers visible */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-bottom: 10px;
+    /* Add space between rows */
 }
 
 .item-heading {
-    font-size: 18px; /* Adjust the font size for the heading */
-    font-weight: bold; /* Make the heading bold */
-    margin-bottom: 5px; /* Add space below the heading */
+    font-size: 18px;
+    /* Adjust the font size for the heading */
+    /* font-weight: bold; */
+    font-family: "AmericanSansLight", Helvetica, Arial, sans-serif;
+    /* Make the heading bold */
+    margin-bottom: 5px;
+    /* Add space below the heading */
 }
 
 /* Style for the checkboxes and labels */
 .checklist-item input[type="checkbox"] {
-    margin-right: 5px; /* Add some space between checkbox and label */
+    margin-right: 5px;
+    /* Add some space between checkbox and label */
 }
 
 .checklist-item label {
-    font-size: 16px; /* Adjust the font size as needed */
-    color: #333; /* Text color */
+    font-size: 20px;
+    font-family: "AmericanSansLight", Helvetica, Arial, sans-serif;
+    /* Adjust the font size as needed */
+    color: #333;
+    /* Text color */
 }
 
 .item-text {
-    margin-top: 5px; /* Add space above the text */
-    font-size: 14px; /* Adjust the font size for the additional text */
-    color: #666; /* Text color */
+    margin-top: 5px;
+    /* Add space above the text */
+    font-size: 14px;
+    font-family: "AmericanSansLight", Helvetica, Arial, sans-serif;
+    /* Adjust the font size for the additional text */
+    color: #666;
+    /* Text color */
 }
 
 .horizontal-shadow {
     width: 100%;
-    height: 2px; /* Adjust the height of the shadow line as needed */
-    background-color: #fbfbfb; /* Shadow color */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for the line */
+    height: 2px;
+    /* Adjust the height of the shadow line as needed */
+    background-color: #fbfbfb;
+    /* Shadow color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Add a subtle box shadow for the line */
 }
 
 /*Desola paste*/
@@ -147,15 +229,18 @@ header {
 }
 
 i {
-    color: #337ab7;
+    color: #0078d2;
     /* Lighter blue color for icons */
     font-size: 24px;
+    font-family: "AmericanSansLight", Helvetica, Arial, sans-serif;
     /* Adjust the icon size as needed */
 }
 
 a {
     text-decoration: none;
-    color: #337ab7;
+    font-family: "AmericanSansLight", Helvetica, Arial, sans-serif;
+    color: #0078d2;
+    font-size: 22px;
     /* Lighter blue color for text */
 }
 
@@ -168,38 +253,84 @@ a {
 }
 
 /*Card Part*/
-/* Apply basic styles to the card */
 .card {
-    width: 100%; /* Card spans the screen horizontally */
-    height: 300px; /* Card is 300px tall */
+    width: 100%;
+    /* Card spans the screen horizontally */
+    height: 300px;
+    /* Card is 300px tall */
     display: flex;
     flex-direction: column;
-    background: url('dallas_sunset.jpeg') no-repeat center center;
+    /* background: url('/Users/chiomaifezie/Xula-1/sunset_dallas.jpg') no-repeat center center; */
     background-size: cover;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* Style for the top part of the card (image and small text) */
-.card-image {
-    flex: 1; /* Top part takes available space, making it bigger */
     position: relative;
-    overflow: hidden; /* Hide overflow content */
+    padding: 10px;
+    margin-bottom: 50px;
+    /* Add margin-bottom for spacing between cards */
 }
 
-/* Style for the small text within the card image */
-.card-image p {
-    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+/* Style for the bottom part of the card (text) */
+.card::before {
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    text-align: center;
+    /* height: 60px; */
+    /* Height for the text */
+    background: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent white background */
+}
+
+/* Style for the text within the card */
+/* .card::after {
+    content: 'Text goes here. This is the bottom part of the card.';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    text-align: left;
     padding: 5px;
+} */
+
+body {
+    margin: 40px;
+    /* Add margin to the entire page */
+    padding: 20px;
+    /* Add padding to the entire page */
+    padding-right: 70px;
+}
+
+.card img {
+    width: 100%;
+    /* Make the image width 100% of the card's width */
+    height: 100%;
+    /* Make the image height 100% of the card's height */
+    object-fit: cover;
+    /* Ensure the image covers the entire card, maintaining aspect ratio */
 }
 
 /* Style for the bottom part of the card (text) */
-.card-text {
-    padding: 10px;
-    background: #f2f2f2;
+.card-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent white background */
+    font-size: 22px;
+    color: #083862;
+}
+
+#submit {
+    background-color: #0074cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    /* border-radius: 5px; */
+    float: right;
+    padding: 20px 60px;
 }
